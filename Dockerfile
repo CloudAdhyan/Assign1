@@ -10,4 +10,4 @@ RUN systemctl enable apache2
 RUN systemctl restart apache
 COPY . /var/www/html
 RUN systemctl restart apache2
-
+EXPOSE 3000
