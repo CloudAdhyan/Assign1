@@ -7,7 +7,7 @@ RUN apt-get install apache2 -y
 RUN apt-get install systemctl -y
 RUN apt-get update -y
 RUN systemctl enable apache2
-RUN systemctl restart apache
+RUN systemctl restart apache2
 COPY . /var/www/html
 RUN systemctl restart apache2
 EXPOSE 3000
